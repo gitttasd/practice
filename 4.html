@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form.edit .editShow{
+            display: none;
+        }
+     
+        form:not(.edit) .editShow{
+            display: none;
+        } 
+    </style>
+</head>
+<body>
+    <div>폼
+        <form id="e">
+            <button class="editShow">안녕하세요</button>
+        </form>
+    </div>
+    <script>
+        let form = document.querySelector('#e')
+            form.classList.add("edit");
+            form.classList.remove("edit");
+    </script>
+</body>
+</html>
